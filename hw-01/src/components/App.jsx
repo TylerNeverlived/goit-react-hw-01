@@ -1,15 +1,12 @@
 // src/App.jsx
 
-import Product from './Product';
+import Profile from './Profile/Profile';
+import userData from './Profile/userData/userData.json';
 
 export default function App() {
   return (
-    <div>
-      <h1>Best selling</h1>
-
-      <Product />
-      <Product />
-      <Product />
-    </div>
+    <>
+      <Profile data={userData} />
+    </>
   );
 }
